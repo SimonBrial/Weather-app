@@ -1,11 +1,24 @@
-import './App.css'
+import {
+  ConcurrentWeather,
+  Search,
+  UnitsTransform,
+  CurrentLocation,
+  Container,
+  WeatherDay
+} from './components/index'
+
 
 const App = () => {
 
   return (
-    <h1 className="text-3xl font-bold underline text-red-500">
-      Hello world!
-    </h1>
+    <div >
+      <Search />
+      <WeatherDay />
+      <ConcurrentWeather />
+      <UnitsTransform />
+      <CurrentLocation />
+      <Container />
+    </div>
   )
 }
 
