@@ -1,5 +1,5 @@
 export { Search } from './Search';
-export { ConcurrentWeather } from './ConcurrentWeather';
+export { CurrentWeather } from './CurrentWeather';
 export { UnitsTransform } from './UnitsTransform';
 export { CurrentLocation } from './CurrentLocation';
 export { Visibility } from './Visibility';

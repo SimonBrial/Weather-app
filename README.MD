@@ -19,4 +19,16 @@ Icon: https://google.github.io/material-design-icons/
 
 API: https://www.metaweather.com/api/
 
+Styles: {
+    Background Principal: #100E1D,
+    Background Cards: #1E213A,
+    Temperature Buttons: #585676 (Desabled) #E7E7EB (Available),
+    Temperature Font color: #110E3C (Available),
+    Temperature Font color: #E7E7EB (Desabled),
+    Color Font: #E7E7EB,
+    Font Card: Raleway,
+
+
+}
+
 Tips: For Front-end developer, you can use https://cors-anywhere.herokuapp.com/ to help with accessing data from other websites that are normally forbidden by the same-origin policy of web browsers
