@@ -8,3 +8,6 @@ export { Humidity } from './Humidity';
 export { WindStatus } from './WindStatus';
 export { Container } from './Container';
 export { WeatherDay } from './WeatherDay';
+export { InfoContainer } from './InfoContainer';
+export { ForecastContainer } from './ForecastContainer';
+export { ForecastCard } from './ForecastCard';

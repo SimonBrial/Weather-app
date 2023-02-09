@@ -1,13 +1,14 @@
 import {
-  CurrentWeather
+  CurrentWeather, InfoContainer
 } from './components/index'
 
 
 const App = () => {
 
   return (
-    <div className=''>
+    <div className='bg-BackgroundPrincipal flex flex-row flex-wrap'>
       <CurrentWeather />
+      <InfoContainer />
     </div>
   )
 }

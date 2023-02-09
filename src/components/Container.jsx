@@ -1,8 +1,5 @@
 import React from 'react';
 import { WindStatus, Humidity, Visibility, AirPressure } from './index';
-import WeatherToday from '../api/apiRequest';
-import { BtnWeather } from './BtnWeather';
-import axios from 'axios';
 
 
 export const Container = () => {
@@ -16,12 +13,14 @@ export const Container = () => {
     } */
 
     return (
-        <div>
-            <h1>Today's Highlights</h1>
-            <WindStatus />
-            <Humidity />
-            <Visibility />
-            <AirPressure />
+        <div className='flex flex-col'>
+            <h1 className='text-TemperatureFontcolorDesabled text-2xl pb-2 mx-16 flex justify-self-start'>Today's Highlights</h1>
+            <div className='flex flex-row flex-wrap justify-center pt-2'>
+                <WindStatus />
+                <Humidity />
+                <Visibility />
+                <AirPressure />
+            </div>
         </div>
     )
 };
