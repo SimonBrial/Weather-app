@@ -1,5 +1,5 @@
 import React from 'react'
-import { ForecastCard } from './index';
+import { ForecastCard } from '../../index';
 
 export const ForecastContainer = () => {
     return (

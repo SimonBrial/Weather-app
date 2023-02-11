@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Footer, ForecastContainer, UnitsTransform } from './index';
+import { Container, Footer, ForecastContainer, UnitsTransform } from '../index';
 
 export const InfoContainer = () => {
     return (

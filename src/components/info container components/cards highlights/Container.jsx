@@ -1,5 +1,5 @@
 import React from 'react';
-import { WindStatus, Humidity, Visibility, AirPressure } from './index';
+import { WindStatus, Humidity, Visibility, AirPressure } from '../../index';
 
 
 export const Container = () => {
