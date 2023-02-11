@@ -2,8 +2,8 @@ import React from 'react'
 
 export const WindStatus = () => {
     return (
-        <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5' >
-            <h1 className='text-TemperatureFontcolorDesabled mt-4 mb-2 text-xl'>Wind Status</h1>
+        <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5 mb-5 sm:mb-0' >
+            <h1 className='text-TemperatureFontcolorDesabled mt-4 mb- text-xl'>Wind Status</h1>
             <div className='flex flex-row mb-2'>
                 <p className='text-TemperatureFontcolorDesabled text-5xl mx-2'>7</p>
                 <p className='text-TemperatureFontcolorDesabled text-5xl'>mph</p>

@@ -6,7 +6,7 @@ import {
 const App = () => {
 
   return (
-    <div className='bg-BackgroundPrincipal flex flex-row flex-wrap'>
+    <div className=' bg-BackgroundPrincipal flex flex-col sm:flex-row'>
       <CurrentWeather />
       <InfoContainer />
     </div>

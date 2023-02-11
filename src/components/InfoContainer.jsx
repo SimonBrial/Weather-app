@@ -1,25 +1,22 @@
 import React from 'react';
-import { Container, ForecastContainer, UnitsTransform } from './index';
+import { Container, Footer, ForecastContainer, UnitsTransform } from './index';
 
 export const InfoContainer = () => {
     return (
-        <div className='p-5 w-2/3 flex flex-col items-center'>
-            <div className='h-1/3 flex flex-col'>
-                <div className='flex justify-end'>
+        <div className='p-5 w-full sm:w-2/3 max-[866px]:h-full h-screen flex flex-col m-auto sm:items-center'>
+            <div className='h-1/3 flex flex-col '>
+                <div className='flex justify-end mr-10 sm:mr-0'>
                     <UnitsTransform />
                 </div>
-                <div className='items-center'>
+                <div className='flex justify-items-center sm:items-center'>
                     <ForecastContainer />
                 </div>
             </div>
             <div className='h-2/3'>
                 <Container />
             </div>
-            <footer className='flex items-end mt-5'>
-                <p className='text-TemperatureFontcolorDesabled'>Created by <span className='text-orange-400'>Simon Briceño</span> - devChallenges.io</p>
-                <span>
-                    <img src='../../src/img/devchallenges.png' className='w-5 h-5 mx-2'/>
-                </span>
+            <footer className='flex items-end justify-center mt-4 sm:mt-0'>
+                <Footer />
             </footer>
         </div>
     )

@@ -1,22 +1,21 @@
 import React from 'react'
+import { CurrentLocation, Search } from './index';
 
 export const CurrentWeather = () => {
     return (
-        <div className='w-1/3 h-screen bg-BackgroundSecondary flex flex-col'>
-            <div className='h-1/6 mx-3 mb- px-5 py-10 flex justify-between'>
-                <button className=' px-4 bg-BtnSearch text-TemperatureFontcolorDesabled'>Search for Places</button>
-                <button className='w-10 h-10 rounded-full bg-BtnSearch'>
-                    <span className="my-1.5 material-symbols-outlined text-TemperatureFontcolorDesabled">my_location</span>
-                </button>
+        <div className='sm:w-1/3 max-[865px]:h-full h-screen bg-BackgroundSecondary flex flex-col'>
+            <div className='h-1/6 mx-3 mb-3 mt-10 px-5 flex justify-between'>
+                <Search />
+                <CurrentLocation />
             </div>
             <div className='flex flex-col justify-between h-5/6 my-10'>
-                <div className='h-2/6 my- mx-3 flex flex-col justify-center items-center'>
+                <div className='h-2/6 mx-3 flex flex-col justify-center items-center'>
                     <div className='flex justify-center -ml-7 relative'>
                         <img src='../../src/img/Cloud-background.png' alt='Background' className='z-0 opacity-25' />
                         <img src='../../src/img/Clear.png' alt='Imagen del clima de la ubicacion' className='z-10 absolute' />
                     </div>
                 </div>
-                <div className='flex flex-row justify-center'>
+                <div className='mt-10 flex flex-row justify-center'>
                     <span className='text-9xl items-start text-TemperatureFontcolorDesabled'>1</span>
                     <span className='text-TempFont text-TemperatureFontcolorDesabled'>5</span>
                     <span className='ml-3 text-5xl flex items-center text-Temperature'>℃</span>

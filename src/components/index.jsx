@@ -11,3 +11,4 @@ export { WeatherDay } from './WeatherDay';
 export { InfoContainer } from './InfoContainer';
 export { ForecastContainer } from './ForecastContainer';
 export { ForecastCard } from './ForecastCard';
+export { Footer } from './Footer';
