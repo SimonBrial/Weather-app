@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Humidity = () => {
+const Humidity = () => {
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5' >
             <h1 className='text-TemperatureFontcolorDesabled mt-4 mb-2 text-xl'>Humidity</h1>
@@ -28,3 +28,5 @@ export const Humidity = () => {
         </div>
     )
 };
+
+export { Humidity }

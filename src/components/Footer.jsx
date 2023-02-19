@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <div className='flex content-center'>
             <p className='text-TemperatureFontcolorDesabled text-sm sm:text-lg'>Created by <span className='text-orange-400'>Simon Briceño</span> - devChallenges.io</p>
@@ -10,3 +10,5 @@ export const Footer = () => {
         </div>
     )
 };
+
+export { Footer }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Footer, ForecastContainer, UnitsTransform } from '../index';
 
-export const InfoContainer = () => {
+const InfoContainer = () => {
     return (
         <div className='p-5 w-full sm:w-2/3 max-[866px]:h-full h-screen flex flex-col m-auto sm:items-center'>
             <div className='h-1/3 flex flex-col '>
@@ -21,3 +21,5 @@ export const InfoContainer = () => {
         </div>
     )
 };
+
+export { InfoContainer }

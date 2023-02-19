@@ -1,19 +1,19 @@
-export { Container } from './info container components/cards highlights/Container';
-export { WindStatus } from './info container components/cards highlights/WindStatus';
-export { Humidity } from './info container components/cards highlights/Humidity';
-export { Visibility } from './info container components/cards highlights/Visibility';
-export { AirPressure } from './info container components/cards highlights/AirPressure';
+export { AirPressure } from './forescast_components/AirPressure';
+export { Container } from './forescast_components/Container';
+export { ForecastCard } from './forescast_components/ForecastCard';
+export { ForecastContainer } from './forescast_components/ForecastContainer';
+export { Humidity } from './forescast_components/Humidity';
+export { InfoContainer } from './forescast_components/InfoContainer';
+export { UnitsTransform } from './forescast_components/UnitsTransform';
+export { Visibility } from './forescast_components/Visibility';
+export { WindStatus } from './forescast_components/WindStatus';
 // ---------------------------------------------------------- //
-export { CurrentLocation } from './current components/CurrentLocation';
-export { CurrentWeather } from './current components/CurrentWeather';
-export { Day } from './current components/Day';
-export { Details } from './current components/Details';
-export { Search } from './current components/Search';
-export { WeatherIcon } from './current components/WeatherIcon';
+export { CurrentLocation } from './current_components/CurrentLocation';
+export { CurrentWeather } from './current_components/CurrentWeather';
+export { Day } from './current_components/Day';
+export { Details } from './current_components/Details';
+export { Search } from './current_components/Search';
+export { WeatherIcon } from './current_components/WeatherIcon';
 // ---------------------------------------------------------- //
-export { ForecastCard } from './info container components/forest components/ForecastCard';
-export { ForecastContainer } from './info container components/forest components/ForecastContainer';
-export { UnitsTransform } from './info container components/forest components/UnitsTransform';
-export { InfoContainer } from './info container components/InfoContainer';
 // ---------------------------------------------------------- //
 export { Footer } from './Footer';

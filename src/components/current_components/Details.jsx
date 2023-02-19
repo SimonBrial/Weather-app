@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Details = () => {
+const Details = () => {
     return (
         <div className='h-2/6 mx-3 flex flex-col justify-center items-center'>
             <h1 className='text-Temperature text-center text-4xl mt-'>Shower</h1>
@@ -14,3 +14,5 @@ export const Details = () => {
         </div>
     )
 };
+
+export { Details }

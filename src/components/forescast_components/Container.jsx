@@ -1,8 +1,8 @@
 import React from 'react';
-import { WindStatus, Humidity, Visibility, AirPressure } from '../../index';
+import { WindStatus, Humidity, Visibility, AirPressure } from '../index';
 
 
-export const Container = () => {
+const Container = () => {
     /* const handleWeather = async () => {
         const VITE_API_KEY = '8360a837b90921597f2af06ebf76fd77';
         const URL = `https://api.openweathermap.org/data/2.5/weather?q=${'tocuyito'},${'ve'}&appid=${VITE_API_KEY}&units=metrics`;
@@ -24,3 +24,5 @@ export const Container = () => {
         </div>
     )
 };
+
+export { Container }

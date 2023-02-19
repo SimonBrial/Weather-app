@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const UnitsTransform = () => {
+const UnitsTransform = () => {
     return (
         <>
             <button className='w-10 h-10 rounded-full mx-1 bg-TemperatureButtonsAvalible  text-TemperatureFontcolorAvailable font-bold'>℃</button>
@@ -8,3 +8,5 @@ export const UnitsTransform = () => {
         </>
     )
 };
+
+export { UnitsTransform }

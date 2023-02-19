@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ForecastCard = () => {
+const ForecastCard = () => {
     return (
         <div className='m-2 p-2 bg-BackgroundCards'>
             <h1 className='text-TemperatureFontcolorDesabled text-lg text-center font-medium'>Tomorrow</h1>
@@ -18,3 +18,5 @@ export const ForecastCard = () => {
         </div>
     )
 };
+
+export { ForecastCard }

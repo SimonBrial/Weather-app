@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const WindStatus = () => {
+const WindStatus = () => {
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5 mb-5 sm:mb-0' >
             <h1 className='text-TemperatureFontcolorDesabled mt-4 mb- text-xl'>Wind Status</h1>
@@ -19,3 +19,5 @@ export const WindStatus = () => {
         </div>
     )
 };
+
+export { WindStatus }

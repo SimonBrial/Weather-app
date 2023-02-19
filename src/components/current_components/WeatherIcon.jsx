@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const WeatherIcon = () => {
+const WeatherIcon = () => {
     return (
         <div className='flex justify-center -ml-7 relative'>
             <img src='../../src/img/Cloud-background.png' alt='Background' className='z-0 opacity-25' />
@@ -8,3 +8,5 @@ export const WeatherIcon = () => {
         </div>
     )
 };
+
+export { WeatherIcon }

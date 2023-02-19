@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Visibility = () => {
+const Visibility = () => {
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center justify-center w-80 h-40 mr-5 mt-5' >
             <h1 className='text-TemperatureFontcolorDesabled mt-5 mb-2 text-xl'>Visibility</h1>
@@ -14,3 +14,5 @@ export const Visibility = () => {
         </div>
     )
 };
+
+export { Visibility }
