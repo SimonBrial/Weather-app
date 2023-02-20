@@ -4,7 +4,7 @@ import {
     WeatherIcon, 
     Details, 
     Search, 
-    Day
+    DayTemperature
 } from '../index';
 
 const CurrentWeather = () => {
@@ -16,7 +16,7 @@ const CurrentWeather = () => {
             </div>
             <div className='flex flex-col justify-between h-5/6 my-10'>
                 <WeatherIcon />
-                <Day />
+                <DayTemperature />
                 <Details />
             </div>
         </div>
