@@ -4,7 +4,6 @@ import { useWeatherStore } from '../../store/weatherStore';
 const BtnFarenheit = ({ colorState, action }) => {
 
     const currentUbication = useWeatherStore(state => state.currentUbication);
-    console.log(action)
 
     const farenheit  = (kelvin) => {
         const tempFarenheit = (kelvin - 273.15) * (9/5) + 32;

@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useWeatherStore } from '../../store/weatherStore';
 
 const WindStatus = () => {
+
+    const currentUbication = useWeatherStore(state => state.currentUbication);
+    
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5 mb-5 sm:mb-0' >
             <h1 className='text-TemperatureFontcolorDesabled mt-4 mb- text-xl'>Wind Status</h1>

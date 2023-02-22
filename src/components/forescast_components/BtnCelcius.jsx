@@ -4,7 +4,6 @@ import { useWeatherStore } from '../../store/weatherStore';
 const BtnCelcius = ({ colorState, action }) => {
 
     const currentUbication = useWeatherStore(state => state.currentUbication);
-    console.log(action)
 
     function celcius (kelvin) {
         const tempCelcius = kelvin - 273.15;
