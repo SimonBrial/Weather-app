@@ -5,9 +5,20 @@ const DayTemperature = () => {
 
     const currentUbication = useWeatherStore(state => state.currentUbication);
 
-    //const kelvin = currentUbication.data.main.temp;
+    const tempGrados = () => {
+        if (currentUbication == null) {
+            console.log('Esta vacio el estado --- From: <DayTemperature /> component')
+        } else {
+            const kelvin = currentUbication.data.main.temp;
+            console.log(kelvin)
+            const celcius = kelvin - 273.15;
+            console.log(celcius)
+            return celcius.toFixed(2);
+        }
+    };
+    //
 
-    //const celcius = kelvin - 273.15;
+    //
 
     return (
         <div className='mt-10 flex flex-row justify-center'>
@@ -15,7 +26,7 @@ const DayTemperature = () => {
             {
                 (currentUbication == null)
                 ? <span className='text-TempFont text-TemperatureFontcolorDesabled'>15</span>
-                : <span className='text-TempFont text-TemperatureFontcolorDesabled'>{currentUbication.data.main.temp}</span>
+                : <span className='text-TempFont text-TemperatureFontcolorDesabled'>{tempGrados()}</span>
             }
             <span className='ml-3 text-5xl flex items-center text-Temperature'>℃</span>
         </div>

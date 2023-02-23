@@ -10,12 +10,13 @@ const Humidity = () => {
             return console.log('Esta vacio el estado');
         } else {
             const humidity = currentUbication.data.main.humidity;
+            console.log(humidity);
             return humidity
         }
     }
 
     const humidity = humidityValue();
-    console.log(humidity)
+    console.log(humidity);
 
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5' >
