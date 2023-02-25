@@ -10,13 +10,13 @@ const Humidity = () => {
             return console.log('Esta vacio el estado');
         } else {
             const humidity = currentUbication.data.main.humidity;
-            console.log(humidity);
+            //console.log(humidity);
             return humidity
         }
     }
 
     const humidity = humidityValue();
-    console.log(humidity);
+    //console.log(humidity);
 
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5' >
@@ -43,7 +43,7 @@ const Humidity = () => {
                     {
                         (currentUbication == null) 
                         ? <span className='px-[84px] h-3 bg-amber-300 absolute index-10 rounded-xl'></span>
-                        : <span className={`px-[${humidity}px] h-3 bg-amber-300 absolute index-10 rounded-xl`}></span>
+                        : <span className='h-3 bg-amber-300 absolute index-10 rounded-xl' style={{ padding: ` 0 ${humidity}px` }}></span>
                     }
                 </div>
                 <div className='text-TemperatureFontcolorDesabled text-end mt-2 mr-2'>

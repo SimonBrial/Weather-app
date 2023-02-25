@@ -9,7 +9,7 @@ const CurrentLocation = () => {
         <button className='w-10 h-10 rounded-full bg-BtnSearch' 
         onClick={() => {
             currentLocationData()
-            console.log(currentUbication)
+            //console.log(currentUbication)
         }}>
             <span className="my-1.5 material-symbols-outlined text-TemperatureFontcolorDesabled">my_location</span>
         </button>

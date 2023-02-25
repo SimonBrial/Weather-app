@@ -7,12 +7,12 @@ const DayTemperature = () => {
 
     const tempGrados = () => {
         if (currentUbication == null) {
-            console.log('Esta vacio el estado --- From: <DayTemperature /> component')
+            //console.log('Esta vacio el estado --- From: <DayTemperature /> component')
         } else {
             const kelvin = currentUbication.data.main.temp;
-            console.log(kelvin)
+            //console.log(kelvin)
             const celcius = kelvin - 273.15;
-            console.log(celcius)
+            //console.log(celcius)
             return celcius.toFixed(2);
         }
     };

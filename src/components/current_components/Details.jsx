@@ -7,7 +7,7 @@ const Details = () => {
         <div className='h-2/6 mx-3 flex flex-col justify-center items-center'>
             <InfoWeather />
             <div className='justify-between py-3'>
-                <Today />
+                <p className='flex justify-center text-ColorInfoFonts'><Today /></p>
                 <Location />
             </div>
         </div>

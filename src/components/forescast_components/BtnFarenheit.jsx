@@ -12,10 +12,10 @@ const BtnFarenheit = ({ colorState, action }) => {
 
     const handleTempFarenheit = (action) => {
         if (currentUbication.data.main.temp == null && action == false) {
-            console.log('Esta vacio el estado de la APP')
+            //console.log('Esta vacio el estado de la APP')
         } else {
             const tempCelcius = farenheit(currentUbication.data.main.temp)
-            console.log(tempCelcius)
+            //console.log(tempCelcius)
             return tempCelcius;
         }
     };
