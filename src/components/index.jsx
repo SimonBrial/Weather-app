@@ -10,6 +10,7 @@ export { WindStatus } from './forescast_components/WindStatus';
 export { BtnCelcius } from './forescast_components/BtnCelcius';
 export { BtnFarenheit } from './forescast_components/BtnFarenheit';
 export { IconWind } from './forescast_components/IconWind';
+export { ForecastTemp } from './forescast_components/ForecastTemp';
 // ---------------------------------------------------------- //
 export { CurrentLocation } from './current_components/CurrentLocation';
 export { CurrentWeather } from './current_components/CurrentWeather';

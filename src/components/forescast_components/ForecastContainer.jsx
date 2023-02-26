@@ -11,45 +11,45 @@ const ForecastContainer = () => {
             console.log('Esta vaina esta vacia')
         } else {
 
-            const b = dayjs('2023-02-24').format('ddd, MMM D')
-            console.log(b)
-            const options = {
-                year: "2-digit",
-                month: "long",
-                day: "numeric",
-                hour: "numeric",
-                minute: "numeric",
-                second: "numeric",
-                weekday: "long"
-            }
-
-            // HACE FALTA REVISAR MEJOR ESTO
-            
             const data = currentForecast.data.list;
-            //const day = new Date();
-            const dates = [];
-            data.map((elemt) => {
-                const fecha = elemt.dt_txt
-                const formatDate = dayjs(fecha).format('ddd, MMM D')
-                //const formatDate = new Intl.DateTimeFormat('en-US', options).format(day);
-                dates.push(formatDate)
-                console.log(fecha)
-                console.log(formatDate)
-                return dates;
+            const dataShow = data.map((dat) => {
+                const fecha = dat.dt_txt.split(' ').shift();
+                const max = dat.main.temp_max;
+                const min = dat.main.temp_min;
+                const formatDate = dayjs(fecha).format('ddd, MMM D');
+                return [formatDate, max, min];
             })
+            
+            return dataShow
         }
     }
-    const prueba = dateFormating()
-    //console.log(prueba)
+
+    const infoForecast = dateFormating();
+    //console.log(infoForecast)
 
     return (
-        <div className='w-full m-auto flex flex-wrap sm:items-center  sm:justify-center'>
-            <ForecastCard date={'24/2/2023'} />
-            <ForecastCard date={'24/2/2023'} />
-            <ForecastCard date={'24/2/2023'} />
-            <ForecastCard date={'24/2/2023'} />
-            <ForecastCard date={'24/2/2023'} />
-        </div>
+        <div className='pt-2 w-full m-auto flex flex-wrap sm:items-center sm:justify-center'>
+            {
+                (currentForecast == null)
+                    ? <>
+                        <ForecastCard date={'Sat, Feb 25'} />
+                        <ForecastCard date={'Sat, Feb 25'} />
+                        <ForecastCard date={'Sat, Feb 25'} />
+                        <ForecastCard date={'Sat, Feb 25'} />
+                        <ForecastCard date={'Sat, Feb 25'} />
+                    </>
+                    : <>{
+                        infoForecast.map((date, i, arr) => {
+                            if ((i % 7) === 0) {
+                                if (i != 0) {
+                                    return <ForecastCard key={i} date={date[0]} maxTemp={date[1]} minTemp={date[2]} />
+                                }
+                            }
+                        })
+                    }</>
+            }
+
+        </div >
     )
 };
 

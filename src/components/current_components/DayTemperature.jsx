@@ -4,21 +4,15 @@ import { useWeatherStore } from '../../store/weatherStore';
 const DayTemperature = () => {
 
     const currentUbication = useWeatherStore(state => state.currentUbication);
+    const farenheit = useWeatherStore(state => state.farenheit);
 
     const tempGrados = () => {
-        if (currentUbication == null) {
-            //console.log('Esta vacio el estado --- From: <DayTemperature /> component')
-        } else {
+        if (currentUbication !== null) { 
             const kelvin = currentUbication.data.main.temp;
-            //console.log(kelvin)
             const celcius = kelvin - 273.15;
-            //console.log(celcius)
             return celcius.toFixed(2);
         }
     };
-    //
-
-    //
 
     return (
         <div className='mt-10 flex flex-row justify-center'>

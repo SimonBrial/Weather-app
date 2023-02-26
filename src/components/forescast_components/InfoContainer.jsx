@@ -4,7 +4,7 @@ import { Container, Footer, ForecastContainer, UnitsTransform } from '../index';
 const InfoContainer = () => {
     return (
         <div className='p-5 w-full sm:w-2/3 max-[866px]:h-full h-screen flex flex-col m-auto sm:items-center'>
-            <div className='h-1/3 flex flex-col '>
+            <div className='h-1/3 flex flex-col pt-5'>
                 <div className='flex justify-end mr-10 sm:mr-0'>
                     <UnitsTransform />
                 </div>
