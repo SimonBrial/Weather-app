@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useWeatherStore } from '../../store/weatherStore';
 
 const ForecastTemp = ({ max, min }) => {

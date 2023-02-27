@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
 import { ForecastCard } from '../index';
 import { useWeatherStore } from '../../store/weatherStore';

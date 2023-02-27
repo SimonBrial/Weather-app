@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BtnCelcius, BtnFarenheit } from '../index';
 import { useWeatherStore } from '../../store/weatherStore';
 

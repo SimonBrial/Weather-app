@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Footer, ForecastContainer, UnitsTransform } from '../index';
 
 const InfoContainer = () => {

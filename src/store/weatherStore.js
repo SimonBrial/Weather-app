@@ -24,9 +24,8 @@ export const useWeatherStore = create((set) => ({
             const success = async (position) => {
                 const lat = position.coords.latitude;
                 const lon = position.coords.longitude;
+                
                 const data = await WeatherByLatAndLon(lat, lon)
-                //console.log(data[0])
-                //console.log(data[1])
 
                 set({ currentUbication: data[0] });
                 set({ currentForecast: data[1] });

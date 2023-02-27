@@ -24,3 +24,5 @@ export { Location } from './current_components/Location';
 // ---------------------------------------------------------- //
 // ---------------------------------------------------------- //
 export { Footer } from './Footer';
+export { Loading } from './Loading';
+export { Alert } from './Alert';
