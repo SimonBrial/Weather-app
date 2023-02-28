@@ -60,6 +60,18 @@ export const useWeatherStore = create((set) => ({
             console.log('Hay un error: ' + err);
             throw new Error('Error en WeatherByLatAndLon');
         }
-    })
-}
-));
+    }),
+    updateTemperature: (stateA, stateB) => {
+        if (stateA === true && stateB === false) {
+            return set({ 
+                farenheit: true,
+                celcius: false
+            })
+        } else {
+            return set({
+                farenheit: false,
+                celcius: true
+            })
+        }
+    }
+}));

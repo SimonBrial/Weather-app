@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import dayjs from 'dayjs';
-import { ForecastCard } from '../index';
 import { useWeatherStore } from '../../store/weatherStore';
+import { ForecastCard } from '../index';
 
 const ForecastContainer = () => {
     const currentForecast = useWeatherStore(state => state.currentForecast);

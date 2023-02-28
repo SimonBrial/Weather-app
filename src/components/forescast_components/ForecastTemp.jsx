@@ -1,28 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useWeatherStore } from '../../store/weatherStore';
-import { convertion } from '../../assets/utils';
+import { convertionCelcius, convertionFarenheit } from '../../assets/utils';
 
 const ForecastTemp = ({ max, min }) => {
 
-    const farenheit = useWeatherStore(state => state.farenheit);
-    const currentForecast = useWeatherStore(state => state.currentForecast);
+    const celcius = useWeatherStore(state => state.celcius);
 
-    const [temperatura, setTemperature] = useState();
-    const [grados, setGrados] = useState(false);
+    const convertion = (kelvin) => {
+        if (celcius) { // celcius = true
+            const celciusTemp = convertionCelcius(kelvin);
+            return celciusTemp;
+        } else { // celcius = false
+            const farenheitTemp = convertionFarenheit(kelvin);
+            return farenheitTemp;
+        }
+    };
 
-    useEffect(() => {
-        const convertion = (kelvin) => {
-            if (farenheit) { // farenheit = false
-                const celciusTemp = kelvin - 273.15;
-                return celciusTemp.toFixed(1);
-            } else { // farenheit = true
-                const farenheitTemp = (kelvin - 273.15) * (9 / 5) + 32;
-                return farenheitTemp.toFixed(1);
-            }
-        };
-    }, [])
 
-    
 
     return (
         <>
@@ -30,7 +24,7 @@ const ForecastTemp = ({ max, min }) => {
                 <span className='text-lg text-TemperatureFontcolorDesabled'>{convertion(max)}</span>
                 <span className='ml-1 text-md flex items-center text-TemperatureFontcolorDesabled'>
                     {
-                        (farenheit)
+                        (celcius)
                             ? <>℃</>
                             : <>°F</>
                     }
@@ -40,7 +34,7 @@ const ForecastTemp = ({ max, min }) => {
                 <span className='text-lg text-Temperature'>{convertion(min)}</span>
                 <span className='ml-1 text-md flex items-center text-Temperature'>
                     {
-                        (farenheit)
+                        (celcius)
                             ? <>℃</>
                             : <>°F</>
                     }

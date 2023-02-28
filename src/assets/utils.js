@@ -1,11 +1,9 @@
-import { Visibility } from "../components";
-
-export const celcius = (kelvin) => {
+export const convertionCelcius = (kelvin) => {
     const celcius = kelvin - 273.15;
     return celcius.toFixed(2);
 };
 
-export const farenheit = (kelvin) => {
+export const convertionFarenheit = (kelvin) => {
     const farenheit = (kelvin - 273.15) * (9 / 5) + 32;
     return farenheit.toFixed(2);
 };
@@ -23,8 +21,8 @@ export const visibilityValue = (visibility) => {
 export const convertion = (temp, state) => {
     // La variable "temp" esta en KELVIN, asi que no hay problemas por la conversion
     if (state) { // farenheit = false
-        return celcius(temp)
+        return convertionCelcius(temp)
     } else { // farenheit = true
-        return farenheit(temp)
+        return convertionFarenheit(temp)
     }
 };

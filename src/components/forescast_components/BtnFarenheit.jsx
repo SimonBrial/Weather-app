@@ -3,31 +3,23 @@ import { useWeatherStore } from '../../store/weatherStore';
 
 const BtnFarenheit = ({ colorState, action }) => {
 
-    const currentUbication = useWeatherStore(state => state.currentUbication);
+    const updateTemperature = useWeatherStore(state => state.updateTemperature);
+    const farenheit = useWeatherStore(state => state.farenheit);
+    const celcius = useWeatherStore(state => state.celcius);
 
-    const farenheit  = (kelvin) => {
-        const tempFarenheit = (kelvin - 273.15) * (9/5) + 32;
-        return tempFarenheit;
-    };
-
-    const handleTempFarenheit = (action) => {
-        if (currentUbication.data.main.temp == null && action == false) {
-            //console.log('Esta vacio el estado de la APP')
-        } else {
-            const tempCelcius = farenheit(currentUbication.data.main.temp)
-            //console.log(tempCelcius)
-            return tempCelcius;
-        }
+    const handleTemp = () => {
+        console.log(farenheit)
+        return updateTemperature(celcius, farenheit)
     };
 
     return (
         <>
             <button className={
-                (action)
+                (farenheit)
                     ? colorState.tempAvailable
                     : colorState.tempHidden
             }
-            onClick={handleTempFarenheit}>°F</button>
+                onClick={handleTemp}>°F</button>
         </>
     )
 }
