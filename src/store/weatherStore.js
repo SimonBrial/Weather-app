@@ -5,6 +5,7 @@ import axios from 'axios';
 export const useWeatherStore = create((set) => ({
     celcius: true,
     farenheit: false,
+    searchCity: false,
     currentUbication: null,
     currentForecast: null,
     currentLocationData: () => new Promise((resolve, reject) => {
@@ -26,6 +27,7 @@ export const useWeatherStore = create((set) => ({
                 const lon = position.coords.longitude;
                 
                 const data = await WeatherByLatAndLon(lat, lon)
+                console.log(data)
 
                 set({ currentUbication: data[0] });
                 set({ currentForecast: data[1] });
@@ -72,6 +74,15 @@ export const useWeatherStore = create((set) => ({
                 farenheit: false,
                 celcius: true
             })
+        }
+    },
+    updateSearch: (action) => {
+        if (action === true) {
+            console.log(action)
+            return set({ searchCity: false })
+        } else {
+            console.log(action)
+            return set({ searchCity: true })
         }
     }
 }));

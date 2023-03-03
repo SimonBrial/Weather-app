@@ -21,7 +21,7 @@ const ForecastTemp = ({ max, min }) => {
     return (
         <>
             <div className='flex flex-row justify-center mx-1 '>
-                <span className='text-lg text-TemperatureFontcolorDesabled'>{convertion(max)}</span>
+                <span className='text-md text-TemperatureFontcolorDesabled'>{convertion(max)}</span>
                 <span className='ml-1 text-md flex items-center text-TemperatureFontcolorDesabled'>
                     {
                         (celcius)
@@ -31,7 +31,7 @@ const ForecastTemp = ({ max, min }) => {
                 </span>
             </div>
             <div className='flex flex-row justify-center mx-1 px-1'>
-                <span className='text-lg text-Temperature'>{convertion(min)}</span>
+                <span className='text-md text-Temperature'>{convertion(min)}</span>
                 <span className='ml-1 text-md flex items-center text-Temperature'>
                     {
                         (celcius)

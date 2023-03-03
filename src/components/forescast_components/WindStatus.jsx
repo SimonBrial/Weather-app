@@ -79,9 +79,9 @@ const WindStatus = () => {
                 }
                 <p className='text-TemperatureFontcolorDesabled text-5xl'>mph</p>
             </div>
-            <>
+            <div className='flex flex-row items-center'>
                 {coord()}
-            </>
+            </div>
         </div>
     )
 };

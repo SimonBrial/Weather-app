@@ -3,6 +3,7 @@ import {
   CurrentWeather,
   InfoContainer,
   Loading,
+  Sidebar,
   Alert
 } from './components/index';
 import { useWeatherStore } from './store/weatherStore';
@@ -11,6 +12,7 @@ import { useWeatherStore } from './store/weatherStore';
 const App = () => {
 
   const currentLocationData = useWeatherStore(state => state.currentLocationData);
+  const searchCity = useWeatherStore(state => state.searchCity);
 
   const [ubication, setUbication] = useState(false);
 
@@ -29,7 +31,10 @@ const App = () => {
       {
         !ubication
           ? <Loading />
-          : <> <CurrentWeather /> <InfoContainer /> </>
+          : <>
+              <> {searchCity ? <Sidebar /> : <CurrentWeather />}</>
+              <InfoContainer />
+            </>
       }
     </div>
   )

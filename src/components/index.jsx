@@ -21,6 +21,7 @@ export { WeatherIcon } from './current_components/WeatherIcon';
 export { InfoWeather } from './current_components/InfoWeather';
 export { Today } from './current_components/Today';
 export { Location } from './current_components/Location';
+export { Sidebar } from './current_components/Sidebar';
 // ---------------------------------------------------------- //
 // ---------------------------------------------------------- //
 export { Footer } from './Footer';

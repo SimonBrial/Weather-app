@@ -15,7 +15,7 @@ module.exports = {
         TemperatureFontcolorDesabled: '#E7E7EB',
         Temperature: '#A09FB1',
         ColorFont: '#E7E7EB',
-        ColorInfoFonts: '#88869D'
+        ColorInfoFonts: '#88869D',
       },
       textColor: {
         SearchButton: '#E7E7EB',
@@ -23,6 +23,10 @@ module.exports = {
       backgroundColor: {
         BackgroundPrincipal: '#100E1D',
         BackgroundSecondary: '#1E213A',
+        BackgroundBtnSearch: '#3C47E9',
+      },
+      borderColor: {
+        BorderSearch: '#3C47E9'
       }
     },
     fontSize: {
