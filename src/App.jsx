@@ -3,11 +3,9 @@ import {
   CurrentWeather,
   InfoContainer,
   Loading,
-  Sidebar,
-  Alert
+  Sidebar
 } from './components/index';
 import { useWeatherStore } from './store/weatherStore';
-
 
 const App = () => {
 

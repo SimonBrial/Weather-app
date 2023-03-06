@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useWeatherStore } from '../../store/weatherStore';
 import { pressure } from '../../assets/utils'
 
 const AirPressure = () => {
 
-
     const currentUbication = useWeatherStore(state => state.currentUbication);
 
-    const [psiValue, setPsiValue] = useState()
-
-    useEffect(() => {
-        const data = pressure(currentUbication.data.main.pressure)
-        setPsiValue(data)
-    }, []);
+    const psiValue = pressure(currentUbication.data.main.pressure)
 
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center justify-center w-80 h-50 mt-5 mr-5' >

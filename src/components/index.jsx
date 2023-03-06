@@ -26,4 +26,3 @@ export { Sidebar } from './current_components/Sidebar';
 // ---------------------------------------------------------- //
 export { Footer } from './Footer';
 export { Loading } from './Loading';
-export { Alert } from './Alert';

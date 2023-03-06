@@ -1,5 +1,9 @@
 import React from 'react'
-import { Today, InfoWeather, Location } from '../index';
+import { 
+    Today, 
+    InfoWeather, 
+    Location 
+} from '../index';
 
 const Details = () => {
 

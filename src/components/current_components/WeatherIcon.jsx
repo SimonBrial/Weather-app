@@ -14,8 +14,6 @@ const WeatherIcon = ({ id }) => {
      * 50d.png  mist -------------> Hail.png
      */
 
-    const [icon, setIcon] = useState('');
-
     const weatherIcon = {
         '01d': 'Clear.png',
         '01n': 'Clear.png',
@@ -37,9 +35,7 @@ const WeatherIcon = ({ id }) => {
         '50n': 'Hail.png'
     };
 
-    useEffect(() => {
-            setIcon(weatherIcon[id]);
-    }, []);
+    const icon = weatherIcon[id];
 
     return (
         <>

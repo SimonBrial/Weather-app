@@ -8,7 +8,7 @@ const BtnCelcius = ({ colorState, action }) => {
     const farenheit = useWeatherStore(state => state.farenheit);
 
     const handleTemp = () => {
-        console.log(celcius)
+        //console.log(celcius)
         return updateTemperature(celcius, farenheit)
     };
 

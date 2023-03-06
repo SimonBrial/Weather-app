@@ -5,11 +5,12 @@ const Humidity = () => {
 
     const currentUbication = useWeatherStore(state => state.currentUbication);
 
-    const [humid, setHumid] = useState()
+    const humid = currentUbication.data.main.humidity;
 
-    useEffect(() => {
+    /* useEffect(() => {
         setHumid(currentUbication.data.main.humidity)
-    }, [])
+        console.log(humid)
+    }, [humid]) */
 
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5' >

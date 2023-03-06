@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useWeatherStore } from '../../store/weatherStore';
 import { visibilityValue } from '../../assets/utils';
 
@@ -7,12 +7,7 @@ const Visibility = () => {
 
     const currentUbication = useWeatherStore(state => state.currentUbication);
 
-    const [visib, setVisib] = useState();
-
-    useEffect(() => {
-        const value = visibilityValue(currentUbication.data.visibility);
-        setVisib(value)
-    }, [])
+    const visib =  visibilityValue(currentUbication.data.visibility);
 
     return (
         <div className='bg-BackgroundSecondary flex flex-col items-center justify-center w-80 h-40 mr-5 mt-5' >
