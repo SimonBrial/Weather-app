@@ -9,6 +9,9 @@ import { useWeatherStore } from './store/weatherStore';
 
 const App = () => {
 
+  // Para determinar el alto de la pantalla
+  const heigth =  window.screen.height;
+
   const currentLocationData = useWeatherStore(state => state.currentLocationData);
   const searchCity = useWeatherStore(state => state.searchCity);
 
@@ -25,14 +28,18 @@ const App = () => {
   }, [])
 
   return (
-    <div className=' bg-BackgroundPrincipal flex flex-col sm:flex-row'>
+    <div className={`bg-BackgroundPrincipal h-[${heigth}px] flex flex-col sm:flex-row`}>
       {
         !ubication
           ? <Loading />
           : <>
-              <> {searchCity ? <Sidebar /> : <CurrentWeather />}</>
-              <InfoContainer />
+            <> {searchCity
+              ? <Sidebar />
+              : <CurrentWeather />
+            }
             </>
+            <InfoContainer />
+          </>
       }
     </div>
   )

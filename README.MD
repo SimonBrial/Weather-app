@@ -15,7 +15,7 @@ Challenge: Create a weather app using an API. Use Front-end libraries like React
     User story(optional): I can request my current location weather
     User story(optional): I can convert temperature in Celcius to Fahrenheit and vice versa
 
-Icon: https://google.github.io/material-design-icons/
+Icon: https://react-icons.github.io/react-icons
 
 API: https://www.metaweather.com/api/
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { ForecastTemp, WeatherIcon } from './../index';
 
 const ForecastCard = ({ date, maxTemp, minTemp, id }) => {

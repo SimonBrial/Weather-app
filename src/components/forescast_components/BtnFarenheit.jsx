@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useWeatherStore } from '../../store/weatherStore';
 
 const BtnFarenheit = ({ colorState, action }) => {
