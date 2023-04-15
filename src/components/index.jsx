@@ -11,7 +11,6 @@ export { BtnCelcius } from './forescast_components/BtnCelcius';
 export { BtnFarenheit } from './forescast_components/BtnFarenheit';
 export { IconWind } from './forescast_components/IconWind';
 export { ForecastTemp } from './forescast_components/ForecastTemp';
-export { WindIconSvg } from './forescast_components/WindIconSvg';
 // ---------------------------------------------------------- //
 export { CurrentLocation } from './current_components/CurrentLocation';
 export { CurrentWeather } from './current_components/CurrentWeather';

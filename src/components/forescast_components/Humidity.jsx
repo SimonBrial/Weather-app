@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useWeatherStore } from '../../store/weatherStore';
 
 const Humidity = () => {
@@ -7,14 +7,9 @@ const Humidity = () => {
 
     const humid = currentUbication.data.main.humidity;
 
-    /* useEffect(() => {
-        setHumid(currentUbication.data.main.humidity)
-        console.log(humid)
-    }, [humid]) */
-
     return (
-        <div className='bg-BackgroundSecondary flex flex-col items-center w-80 h-52 mr-5' >
-            <h1 className='text-TemperatureFontcolorDesabled mt-4 mb-2 text-xl'>Humidity</h1>
+        <div className='bg-BackgroundSecondary flex flex-col items-center w-80 py-4 mr-5' >
+            <h1 className='text-TemperatureFontcolorDesabled  text-xl'>Humidity</h1> {/* mt-3 mb-2 */}
             <div className='flex flex-row mb-2 items-center'>
                 <div className='flex '>
                     <p className='text-TemperatureFontcolorDesabled text-5xl'>{humid}</p>
@@ -31,7 +26,7 @@ const Humidity = () => {
                     <span className='px-24 h-3 bg-white absolute index-0 rounded-xl addHumidity'></span>
                     <span className='h-3 bg-amber-300 absolute index-10 rounded-xl' style={{ padding: ` 0 ${humid}px` }}></span>
                 </div>
-                <div className='text-TemperatureFontcolorDesabled text-end mt-2 mr-2'>
+                <div className='text-TemperatureFontcolorDesabled text-end mt-1 mr-2'>
                     <span>%</span>
                 </div>
             </div>

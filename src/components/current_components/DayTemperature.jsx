@@ -18,7 +18,7 @@ const DayTemperature = () => {
     };
 
     return (
-        <div className='mt-10 flex flex-row justify-center'>
+        <div className='-mt-20 flex flex-row justify-center'>
             <span className='text-TempFont text-TemperatureFontcolorDesabled'>{temp()}</span>
             <span className='ml-3 text-5xl flex items-center text-Temperature'>
                 {

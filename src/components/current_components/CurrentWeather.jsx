@@ -18,13 +18,13 @@ const CurrentWeather = () => {
                 <CurrentLocation />
             </div>
             <div className='flex flex-col justify-between h-5/6 my-10'>
-                <div className='flex justify-center -ml-7 relative'>
-                    <img src='../../src/img/Cloud-background.png' alt='Background' className='z-0 opacity-25' />
+                <div className='flex justify-center '>
+                    {/* <img src='icons/Cloud-background.svg' alt='Background' className='z-0 opacity-25' /> */}
                     {
                         currentUbication.data.weather.map((element) => {
                             return (
-                                <div key={1} className='z-10 absolute w-44 mt-6'>
-                                    <WeatherIcon id={element.icon} />
+                                <div key={1} className='w-44'>
+                                    <WeatherIcon id={element.icon} stylesIcon={'text-white w-72 h-72 -ml-14 -mt-24'}/>
                                 </div>
                             )
                         })

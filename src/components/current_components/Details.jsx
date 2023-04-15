@@ -8,7 +8,7 @@ import {
 const Details = () => {
 
     return (
-        <div className='h-2/6 mx-3 flex flex-col justify-center items-center'>
+        <div className='h-2/6 mx-3 -mt-2 flex flex-col justify-center items-center'>
             <InfoWeather />
             <div className='justify-between py-3'>
                 <p className='flex justify-center text-ColorInfoFonts'>

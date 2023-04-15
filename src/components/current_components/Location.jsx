@@ -15,7 +15,7 @@ const Location = () => {
 
 
 return (
-    <div className='flex flex-row justify-center items-center mt-5 py-px text-ColorInfoFonts'>
+    <div className='flex flex-row justify-center items-center mt-1 py-px text-ColorInfoFonts'>
         <span className="material-symbols-outlined mr-1">location_on</span>
         {
             <p className='text-lg text-ColorInfoFonts'>{location}, {locationCode}</p>
